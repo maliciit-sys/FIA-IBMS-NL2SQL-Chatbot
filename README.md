@@ -1,6 +1,6 @@
 # 🔐 FIA-IBMS NL2SQL Chatbot
 
-> A self-hosted, fully offline NL2SQL chatbot for Pakistan's Federal Investigation Agency (FIA). Officers ask questions in plain English, the system generates SQL, executes it on Oracle, and returns narrated intelligence briefings — zero cloud dependencies, zero data leakage.
+> A self-hosted, fully offline NL2SQL chatbot for Pakistan's Federal Investigation Agency (FIA). Officers ask questions in plain English, the system generates SQL, executes it on Oracle, and returns narrated intelligence briefings — zero cloud dependencies, zero data leakage. The data used in this project is 100% synthetic and does not contain any real entry.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-23ai_Free-red?logo=oracle&logoColor=white)
