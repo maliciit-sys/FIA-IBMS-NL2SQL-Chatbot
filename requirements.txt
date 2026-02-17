@@ -1,0 +1,7 @@
+oracledb
+sqlalchemy
+ollama
+gradio==6.4.0
+streamlit==1.52.2
+pandas
+matplotlib
