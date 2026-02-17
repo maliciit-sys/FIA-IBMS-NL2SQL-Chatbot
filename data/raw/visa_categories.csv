@@ -1,0 +1,21 @@
+visa_code,visa_name,visa_class,max_duration_days,allows_work,allows_study,requires_sponsor,description
+B1,Business Visa,Non-Immigrant,90,0,0,1,Short-term business visit
+B2,Tourist Visa,Non-Immigrant,90,0,0,0,Tourism and recreation
+W1,Work Visa - General,Non-Immigrant,365,1,0,1,General employment authorization
+W2,Work Visa - Skilled,Non-Immigrant,730,1,0,1,Skilled professional employment
+W3,Work Visa - Domestic,Non-Immigrant,365,1,0,1,Domestic household staff
+S1,Student Visa,Non-Immigrant,1460,0,1,1,Full-time study at accredited institution
+S2,Exchange Visitor,Non-Immigrant,365,0,1,1,Cultural or educational exchange
+F1,Family Reunion Visa,Immigrant,,1,0,1,Joining immediate family members
+F2,Spouse Visa,Immigrant,,1,0,1,Joining spouse or partner
+R1,Refugee Status,Refugee,,1,1,0,Convention refugee protection
+R2,Asylum Seeker Permit,Refugee,,0,0,0,Pending asylum determination
+T1,Transit Visa,Transit,7,0,0,0,Airport or seaport transit
+D1,Diplomatic Visa,Diplomatic,,0,0,0,Diplomatic personnel and family
+D2,Official Visa,Diplomatic,,0,0,0,Government officials on duty
+M1,Medical Visa,Non-Immigrant,180,0,0,0,Medical treatment abroad
+J1,Journalist Visa,Non-Immigrant,180,1,0,1,Press and media professionals
+P1,Pilgrimage Visa,Non-Immigrant,45,0,0,0,Religious pilgrimage (Hajj/Umrah)
+E1,Investor Visa,Immigrant,,1,0,0,Substantial investment immigration
+C1,Conference Visa,Non-Immigrant,30,0,0,1,Conference or seminar attendance
+X1,Emergency Travel Document,Non-Immigrant,30,0,0,0,Emergency one-way travel

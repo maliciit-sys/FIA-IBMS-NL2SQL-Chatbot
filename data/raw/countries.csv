@@ -1,0 +1,51 @@
+country_id,country_name,iso3_code,region,sub_region,income_group,is_conflict_zone
+1,Pakistan,PAK,South Asia,Southern Asia,Lower middle income,0
+2,India,IND,South Asia,Southern Asia,Lower middle income,0
+3,Afghanistan,AFG,South Asia,Southern Asia,Low income,1
+4,Iran,IRN,Middle East,Western Asia,Upper middle income,0
+5,China,CHN,East Asia,Eastern Asia,Upper middle income,0
+6,Bangladesh,BGD,South Asia,Southern Asia,Lower middle income,0
+7,United States,USA,North America,Northern America,High income,0
+8,United Kingdom,GBR,Europe,Northern Europe,High income,0
+9,Saudi Arabia,SAU,Middle East,Western Asia,High income,0
+10,United Arab Emirates,ARE,Middle East,Western Asia,High income,0
+11,Canada,CAN,North America,Northern America,High income,0
+12,Turkey,TUR,Europe/Asia,Western Asia,Upper middle income,0
+13,Germany,DEU,Europe,Western Europe,High income,0
+14,Australia,AUS,Oceania,Australia and NZ,High income,0
+15,Malaysia,MYS,Southeast Asia,South-Eastern Asia,Upper middle income,0
+16,Syria,SYR,Middle East,Western Asia,Low income,1
+17,Iraq,IRQ,Middle East,Western Asia,Upper middle income,1
+18,Somalia,SOM,Africa,Eastern Africa,Low income,1
+19,Yemen,YEM,Middle East,Western Asia,Low income,1
+20,Nigeria,NGA,Africa,Western Africa,Lower middle income,0
+21,Ethiopia,ETH,Africa,Eastern Africa,Low income,0
+22,Myanmar,MMR,Southeast Asia,South-Eastern Asia,Lower middle income,1
+23,South Sudan,SSD,Africa,Eastern Africa,Low income,1
+24,France,FRA,Europe,Western Europe,High income,0
+25,Japan,JPN,East Asia,Eastern Asia,High income,0
+26,Nepal,NPL,South Asia,Southern Asia,Lower middle income,0
+27,Sri Lanka,LKA,South Asia,Southern Asia,Lower middle income,0
+28,Philippines,PHL,Southeast Asia,South-Eastern Asia,Lower middle income,0
+29,Indonesia,IDN,Southeast Asia,South-Eastern Asia,Upper middle income,0
+30,Egypt,EGY,Africa,Northern Africa,Lower middle income,0
+31,Qatar,QAT,Middle East,Western Asia,High income,0
+32,Oman,OMN,Middle East,Western Asia,High income,0
+33,Kuwait,KWT,Middle East,Western Asia,High income,0
+34,Bahrain,BHR,Middle East,Western Asia,High income,0
+35,Thailand,THA,Southeast Asia,South-Eastern Asia,Upper middle income,0
+36,South Korea,KOR,East Asia,Eastern Asia,High income,0
+37,Italy,ITA,Europe,Southern Europe,High income,0
+38,Spain,ESP,Europe,Southern Europe,High income,0
+39,Greece,GRC,Europe,Southern Europe,High income,0
+40,Kenya,KEN,Africa,Eastern Africa,Lower middle income,0
+41,Libya,LBY,Africa,Northern Africa,Upper middle income,1
+42,Sudan,SDN,Africa,Northern Africa,Low income,1
+43,Uzbekistan,UZB,Central Asia,Central Asia,Lower middle income,0
+44,Tajikistan,TJK,Central Asia,Central Asia,Lower middle income,0
+45,Turkmenistan,TKM,Central Asia,Central Asia,Upper middle income,0
+46,Jordan,JOR,Middle East,Western Asia,Upper middle income,0
+47,Lebanon,LBN,Middle East,Western Asia,Upper middle income,0
+48,Palestine,PSE,Middle East,Western Asia,Lower middle income,1
+49,Morocco,MAR,Africa,Northern Africa,Lower middle income,0
+50,Tunisia,TUN,Africa,Northern Africa,Lower middle income,0
