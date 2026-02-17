@@ -1,0 +1,91 @@
+sponsor_id,sponsor_type,sponsor_name,country_id,city,industry,registration_number,is_verified
+1,Employer,Al-Futtaim Group,10,Dubai,Retail,REG-892495,1
+2,Employer,Saudi Aramco,9,Dhahran,Oil & Gas,REG-149405,1
+3,Employer,Emirates Airlines,10,Dubai,Aviation,REG-214975,1
+4,Employer,Qatar Foundation,31,Doha,Education,REG-260265,1
+5,Employer,Emaar Properties,10,Dubai,Construction,REG-757924,1
+6,Employer,Saudi Binladin Group,9,Jeddah,Construction,REG-267753,1
+7,Employer,Al Habtoor Group,10,Dubai,Hospitality,REG-930555,1
+8,Employer,SABIC,9,Riyadh,Manufacturing,REG-813536,1
+9,Employer,Qatar Petroleum,31,Doha,Oil & Gas,REG-542666,1
+10,Employer,Oman Oil Company,32,Muscat,Oil & Gas,REG-725380,1
+11,Employer,Kuwait National Petroleum,33,Kuwait City,Oil & Gas,REG-166613,1
+12,Employer,Bahrain Petroleum Company,34,Manama,Oil & Gas,REG-503457,1
+13,Employer,Al Rajhi Bank,9,Riyadh,Finance,REG-500156,1
+14,Employer,Etisalat,10,Abu Dhabi,Telecom,REG-724834,1
+15,Employer,Dubai Holding,10,Dubai,Conglomerate,REG-590785,1
+16,Employer,Nakheel Properties,10,Dubai,Construction,REG-654816,1
+17,Employer,Majid Al Futtaim,10,Dubai,Retail,REG-363626,1
+18,Employer,Dar Al Arkan,9,Riyadh,Construction,REG-680099,1
+19,Employer,Almarai Company,9,Riyadh,Agriculture,REG-112038,1
+20,Employer,Jabal Omar Development,9,Mecca,Construction,REG-813328,1
+21,Employer,Habib Bank Limited,1,Karachi,Finance,NTN-2921859,1
+22,Employer,Pakistan International Airlines,1,Karachi,Aviation,NTN-5476583,1
+23,Employer,Systems Limited,1,Lahore,Technology,NTN-6707197,1
+24,Employer,Engro Corporation,1,Karachi,Manufacturing,NTN-2871534,1
+25,Employer,Lucky Cement,1,Karachi,Construction,NTN-5924115,1
+26,Employer,Descon Engineering,1,Lahore,Engineering,NTN-8294150,1
+27,Employer,Fauji Foundation,1,Rawalpindi,Conglomerate,NTN-3653446,1
+28,Employer,Jazz (PMCL),1,Islamabad,Telecom,NTN-8612220,1
+29,Employer,TCS Holdings,1,Karachi,Logistics,NTN-1054447,1
+30,Employer,National Bank of Pakistan,1,Karachi,Finance,NTN-5418934,1
+31,Employer,PTCL,1,Islamabad,Telecom,NTN-9398441,1
+32,Employer,Packages Limited,1,Lahore,Manufacturing,NTN-3997281,1
+33,Employer,K-Electric,1,Karachi,Energy,NTN-9517485,1
+34,Employer,Nishat Group,1,Lahore,Textile,NTN-2785277,1
+35,Employer,Dawlance,1,Karachi,Manufacturing,NTN-6007072,1
+36,Employer,Google LLC,7,Mountain View,Technology,INTL-982554,1
+37,Employer,Microsoft Corporation,7,Redmond,Technology,INTL-769987,1
+38,Employer,Amazon Inc,7,Seattle,Technology,INTL-632323,1
+39,Employer,NHS England,8,London,Healthcare,INTL-738551,1
+40,Employer,Deloitte UK,8,London,Consulting,INTL-308573,1
+41,Employer,KPMG International,8,London,Consulting,INTL-260263,1
+42,Employer,Siemens AG,13,Munich,Engineering,INTL-492077,1
+43,Employer,BHP Group,14,Melbourne,Mining,INTL-899550,1
+44,Employer,Royal Bank of Canada,11,Toronto,Finance,INTL-269396,1
+45,Employer,Huawei Technologies,5,Shenzhen,Technology,INTL-665579,1
+46,Institution,Aga Khan University,1,Karachi,Education,EDU-9689,1
+47,Institution,LUMS,1,Lahore,Education,EDU-1009,1
+48,Institution,NUST,1,Islamabad,Education,EDU-6310,1
+49,Institution,IBA Karachi,1,Karachi,Education,EDU-9005,1
+50,Institution,COMSATS University,1,Islamabad,Education,EDU-1319,1
+51,Institution,Quaid-i-Azam University,1,Islamabad,Education,EDU-2832,1
+52,Institution,University of Punjab,1,Lahore,Education,EDU-6947,1
+53,Institution,GIK Institute,1,Topi,Education,EDU-6038,1
+54,Institution,UET Lahore,1,Lahore,Education,EDU-4923,1
+55,Institution,NED University,1,Karachi,Education,EDU-1949,1
+56,Government,UNHCR Pakistan,1,Islamabad,Humanitarian,ORG-4946,1
+57,Government,UNICEF Pakistan,1,Islamabad,Humanitarian,ORG-2290,1
+58,Government,World Health Organization,1,Islamabad,Healthcare,ORG-2403,1
+59,Government,UNDP Pakistan,1,Islamabad,Development,ORG-8962,1
+60,Government,Red Crescent Society,1,Islamabad,Humanitarian,ORG-2133,1
+61,Institution,British Council Pakistan,8,Islamabad,Education,ORG-9727,1
+62,Institution,Fulbright Commission,7,Islamabad,Education,ORG-3060,1
+63,Institution,DAAD Pakistan,13,Islamabad,Education,ORG-3103,1
+64,Government,Australian High Commission,14,Islamabad,Diplomatic,ORG-8787,1
+65,Government,IOM Pakistan,1,Islamabad,Migration,ORG-3705,1
+66,Family,Khan Family,1,Quetta,,,1
+67,Family,Ahmed Family,1,Peshawar,,,0
+68,Family,Ali Family,1,Quetta,,,1
+69,Family,Hassan Family,1,Multan,,,1
+70,Family,Malik Family,1,Faisalabad,,,0
+71,Family,Hussain Family,1,Peshawar,,,0
+72,Family,Shah Family,1,Lahore,,,1
+73,Family,Rahim Family,1,Karachi,,,0
+74,Family,Javed Family,1,Peshawar,,,0
+75,Family,Qureshi Family,1,Lahore,,,0
+76,Family,Sheikh Family,1,Peshawar,,,0
+77,Family,Chaudhry Family,1,Karachi,,,1
+78,Family,Siddiqui Family,1,Lahore,,,0
+79,Family,Mirza Family,1,Quetta,,,1
+80,Family,Durrani Family,1,Peshawar,,,0
+81,Self,Self-Sponsored-1,1,Faisalabad,,,0
+82,Self,Self-Sponsored-2,1,Peshawar,,,0
+83,Self,Self-Sponsored-3,1,Faisalabad,,,0
+84,Self,Self-Sponsored-4,1,Rawalpindi,,,0
+85,Self,Self-Sponsored-5,1,Peshawar,,,0
+86,Self,Self-Sponsored-6,1,Lahore,,,0
+87,Self,Self-Sponsored-7,1,Lahore,,,0
+88,Self,Self-Sponsored-8,1,Rawalpindi,,,0
+89,Self,Self-Sponsored-9,1,Multan,,,0
+90,Self,Self-Sponsored-10,1,Rawalpindi,,,0
