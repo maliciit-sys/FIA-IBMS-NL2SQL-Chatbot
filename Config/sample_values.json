@@ -1,0 +1,491 @@
+{
+  "countries": {
+    "country_name": [
+      "Afghanistan",
+      "Australia",
+      "Bahrain",
+      "Bangladesh",
+      "Canada",
+      "China",
+      "Egypt",
+      "Ethiopia",
+      "France",
+      "Germany",
+      "Greece",
+      "India",
+      "Indonesia",
+      "Iran",
+      "Iraq",
+      "Italy",
+      "Japan",
+      "Jordan",
+      "Kenya",
+      "Kuwait",
+      "Lebanon",
+      "Libya",
+      "Malaysia",
+      "Morocco",
+      "Myanmar"
+    ],
+    "iso3_code": [
+      "AFG",
+      "ARE",
+      "AUS",
+      "BGD",
+      "BHR",
+      "CAN",
+      "CHN",
+      "DEU",
+      "EGY",
+      "ESP",
+      "ETH",
+      "FRA",
+      "GBR",
+      "GRC",
+      "IDN",
+      "IND",
+      "IRN",
+      "IRQ",
+      "ITA",
+      "JOR",
+      "JPN",
+      "KEN",
+      "KOR",
+      "KWT",
+      "LBN"
+    ],
+    "region": [
+      "Africa",
+      "Central Asia",
+      "East Asia",
+      "Europe",
+      "Europe/Asia",
+      "Middle East",
+      "North America",
+      "Oceania",
+      "South Asia",
+      "Southeast Asia"
+    ]
+  },
+  "ports_of_entry": {
+    "port_name": [
+      "Abu Dhabi International Airport",
+      "Allama Iqbal International Airport",
+      "Bacha Khan International Airport",
+      "Bahawalpur Airport",
+      "Bahrain International Airport",
+      "Barcelona-El Prat Airport",
+      "Beijing Capital International Airport",
+      "Chaman Border Crossing",
+      "Dubai International Airport",
+      "Faisalabad International Airport",
+      "Gwadar International Airport",
+      "Gwadar Port",
+      "Hamad International Airport",
+      "Hamid Karzai International Airport",
+      "Heathrow Airport",
+      "Imam Khomeini International Airport",
+      "Islamabad International Airport",
+      "Istanbul Airport",
+      "JFK International Airport",
+      "Jinnah International Airport",
+      "Jomo Kenyatta International Airport",
+      "KLIA International Airport",
+      "Karachi Port",
+      "Khunjerab Pass",
+      "King Abdulaziz International Airport"
+    ],
+    "port_type": [
+      "Airport",
+      "Land Border",
+      "Seaport"
+    ],
+    "city": [
+      "Abu Dhabi",
+      "Bahawalpur",
+      "Bangkok",
+      "Barcelona",
+      "Beijing",
+      "Chaman",
+      "Doha",
+      "Dubai",
+      "Faisalabad",
+      "Gwadar",
+      "Islamabad",
+      "Istanbul",
+      "Jeddah",
+      "Kabul",
+      "Karachi",
+      "Khunjerab",
+      "Kuala Lumpur",
+      "Kuwait City",
+      "Lahore",
+      "London",
+      "Manama",
+      "Manchester",
+      "Multan",
+      "Muscat",
+      "Nairobi"
+    ],
+    "iata_code": [
+      "AUH",
+      "BAH",
+      "BCN",
+      "BHV",
+      "BKK",
+      "DOH",
+      "DXB",
+      "GWD",
+      "IKA",
+      "ISB",
+      "IST",
+      "JED",
+      "JFK",
+      "KBL",
+      "KHI",
+      "KUL",
+      "KWI",
+      "LHE",
+      "LHR",
+      "LYP",
+      "MAN",
+      "MCT",
+      "MUX",
+      "NBO",
+      "PEK"
+    ]
+  },
+  "visa_categories": {
+    "visa_code": [
+      "B1",
+      "B2",
+      "C1",
+      "D1",
+      "D2",
+      "E1",
+      "F1",
+      "F2",
+      "J1",
+      "M1",
+      "P1",
+      "R1",
+      "R2",
+      "S1",
+      "S2",
+      "T1",
+      "W1",
+      "W2",
+      "W3",
+      "X1"
+    ],
+    "visa_name": [
+      "Asylum Seeker Permit",
+      "Business Visa",
+      "Conference Visa",
+      "Diplomatic Visa",
+      "Emergency Travel Document",
+      "Exchange Visitor",
+      "Family Reunion Visa",
+      "Investor Visa",
+      "Journalist Visa",
+      "Medical Visa",
+      "Official Visa",
+      "Pilgrimage Visa",
+      "Refugee Status",
+      "Spouse Visa",
+      "Student Visa",
+      "Tourist Visa",
+      "Transit Visa",
+      "Work Visa - Domestic",
+      "Work Visa - General",
+      "Work Visa - Skilled"
+    ],
+    "visa_class": [
+      "Diplomatic",
+      "Immigrant",
+      "Non-Immigrant",
+      "Refugee",
+      "Transit"
+    ]
+  },
+  "travelers": {
+    "gender": [
+      "F",
+      "M"
+    ],
+    "education_level": [
+      "Bachelors",
+      "Doctorate",
+      "Masters",
+      "Primary",
+      "Professional",
+      "Secondary"
+    ],
+    "marital_status": [
+      "Divorced",
+      "Married",
+      "Single",
+      "Widowed"
+    ]
+  },
+  "document_registry": {
+    "document_type": [
+      "CNIC",
+      "Laissez-Passer",
+      "NICOP",
+      "Passport",
+      "Refugee Card",
+      "Travel Document"
+    ],
+    "status": [
+      "Cancelled",
+      "Expired",
+      "Reported Stolen",
+      "Suspended",
+      "Under Review",
+      "Valid"
+    ]
+  },
+  "visa_applications": {
+    "status": [
+      "Approved",
+      "Denied",
+      "Expired",
+      "Pending",
+      "Revoked",
+      "Withdrawn"
+    ],
+    "fee_currency": [
+      "PKR"
+    ]
+  },
+  "travel_records": {
+    "travel_direction": [
+      "Inbound",
+      "Outbound",
+      "Transit"
+    ],
+    "travel_purpose": [
+      "Business",
+      "Conference",
+      "Deportation",
+      "Diplomatic",
+      "Education",
+      "Emergency",
+      "Employment",
+      "Family Visit",
+      "Medical",
+      "Pilgrimage",
+      "Repatriation",
+      "Tourism",
+      "Transit"
+    ],
+    "carrier": [
+      "Air Arabia",
+      "Air Canada",
+      "Air China",
+      "AirAsia",
+      "AirBlue",
+      "British Airways",
+      "Emirates",
+      "Etihad Airways",
+      "Gulf Air",
+      "Iran Air",
+      "Kam Air",
+      "Kuwait Airways",
+      "Oman Air",
+      "PIA",
+      "Qatar Airways",
+      "Saudi Airlines",
+      "Serene Air",
+      "Thai Airways",
+      "Turkish Airlines",
+      "flyJinnah",
+      "flydubai"
+    ]
+  },
+  "asylum_claims": {
+    "claim_basis": [
+      "Ethnic",
+      "Gender-Based",
+      "Other",
+      "Persecution",
+      "Political",
+      "Religious",
+      "War"
+    ],
+    "status": [
+      "Appealed",
+      "Approved",
+      "Denied",
+      "Filed",
+      "Interview Scheduled",
+      "Under Review",
+      "Withdrawn"
+    ]
+  },
+  "removal_orders": {
+    "reason": [
+      "Criminal Offense",
+      "Failed Asylum",
+      "Fraudulent Documents",
+      "Other",
+      "Security Threat",
+      "Trafficking Involvement",
+      "Unauthorized Work",
+      "Visa Overstay"
+    ],
+    "status": [
+      "Appealed",
+      "Cancelled",
+      "Executed",
+      "Issued",
+      "Stayed"
+    ]
+  },
+  "detention_records": {
+    "status": [
+      "Active",
+      "Deported",
+      "Released",
+      "Transferred"
+    ]
+  },
+  "family_relationships": {
+    "relationship_type": [
+      "Child",
+      "Grandchild",
+      "Grandparent",
+      "Other",
+      "Parent",
+      "Sibling",
+      "Spouse"
+    ]
+  },
+  "watchlist": {
+    "alert_type": [
+      "Criminal",
+      "ECL",
+      "Fraud",
+      "Immigration Violation",
+      "Interpol",
+      "Lost Document",
+      "Security",
+      "Smuggling",
+      "Trafficking"
+    ],
+    "severity": [
+      "Critical",
+      "High",
+      "Low",
+      "Medium"
+    ]
+  },
+  "ecl_entries": {
+    "reason": [
+      "Court Order",
+      "Financial Crime",
+      "Money Laundering",
+      "National Security",
+      "Other",
+      "Pending Investigation",
+      "Tax Evasion",
+      "Terrorism"
+    ],
+    "status": [
+      "Active",
+      "Expired",
+      "Lifted"
+    ]
+  },
+  "trafficking_cases": {
+    "case_type": [
+      "Child",
+      "Debt Bondage",
+      "Domestic Servitude",
+      "Forced Marriage",
+      "Labor",
+      "Organ",
+      "Other",
+      "Sexual"
+    ],
+    "status": [
+      "Acquitted",
+      "Closed",
+      "Convicted",
+      "Open",
+      "Prosecuted",
+      "Under Investigation"
+    ]
+  },
+  "illegal_crossings": {
+    "direction": [
+      "Inbound",
+      "Outbound"
+    ],
+    "detection_method": [
+      "CCTV",
+      "Checkpoint",
+      "Drone",
+      "Informant",
+      "Other",
+      "Patrol",
+      "Sensor",
+      "Tip-Off"
+    ],
+    "outcome": [
+      "Apprehended",
+      "Escaped",
+      "Partial Capture",
+      "Turned Back"
+    ]
+  },
+  "offloading_records": {
+    "reason": [
+      "Airline Refusal",
+      "Court Order",
+      "ECL Match",
+      "Incomplete Travel Docs",
+      "Interpol Alert",
+      "Invalid Documents",
+      "Other",
+      "Suspicious Behavior",
+      "Watchlist Hit"
+    ]
+  },
+  "risk_profiles": {
+    "risk_tier": [
+      "Critical",
+      "High",
+      "Low",
+      "Medium"
+    ]
+  },
+  "suspect_networks": {
+    "role": [
+      "Coordinator",
+      "Document Forger",
+      "Financier",
+      "Lookout",
+      "Organizer",
+      "Recruiter",
+      "Transporter",
+      "Unknown"
+    ],
+    "confidence_level": [
+      "Confirmed",
+      "High",
+      "Low",
+      "Medium"
+    ]
+  },
+  "audit_log": {
+    "action": [
+      "DELETE",
+      "EXPORT",
+      "INSERT",
+      "UPDATE",
+      "VIEW"
+    ]
+  }
+}

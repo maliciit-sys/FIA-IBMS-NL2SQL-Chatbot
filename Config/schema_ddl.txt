@@ -1,0 +1,274 @@
+-- asylum_claims (30,000 rows)
+CREATE TABLE asylum_claims (
+    claim_id                            NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    filing_date                         DATE NOT NULL,
+    claim_basis                         VARCHAR(20) NOT NULL,
+    origin_country_id                   NUMBER NOT NULL,
+    status                              VARCHAR(25) NOT NULL,
+    decision_date                       DATE,
+    assigned_officer                    VARCHAR(100),
+    dependents_count                    NUMBER
+);
+
+-- audit_log (100,000 rows)
+CREATE TABLE audit_log (
+    log_id                              NUMBER NOT NULL,
+    table_name                          VARCHAR(50) NOT NULL,
+    record_id                           NUMBER NOT NULL,
+    action                              VARCHAR(10) NOT NULL,
+    action_timestamp                    TIMESTAMP NOT NULL,
+    officer_id                          VARCHAR(20) NOT NULL,
+    officer_name                        VARCHAR(100),
+    terminal_id                         VARCHAR(30),
+    port_id                             NUMBER,
+    ip_address                          VARCHAR(45),
+    details                             VARCHAR(500)
+);
+
+-- countries (50 rows)
+CREATE TABLE countries (
+    country_id                          NUMBER NOT NULL,
+    country_name                        VARCHAR(100) NOT NULL,
+    iso3_code                           VARCHAR(3) NOT NULL,
+    region                              VARCHAR(50) NOT NULL,
+    sub_region                          VARCHAR(50),
+    income_group                        VARCHAR(30),
+    is_conflict_zone                    NUMBER
+);
+
+-- detention_records (12,000 rows)
+CREATE TABLE detention_records (
+    detention_id                        NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    facility_name                       VARCHAR(150) NOT NULL,
+    facility_country_id                 NUMBER NOT NULL,
+    intake_date                         DATE NOT NULL,
+    release_date                        DATE,
+    reason                              VARCHAR(255),
+    removal_order_id                    NUMBER,
+    status                              VARCHAR(15)
+);
+
+-- document_registry (219,240 rows)
+CREATE TABLE document_registry (
+    document_id                         NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    document_type                       VARCHAR(30) NOT NULL,
+    document_number                     VARCHAR(50) NOT NULL,
+    issuing_country_id                  NUMBER NOT NULL,
+    issue_date                          DATE NOT NULL,
+    expiry_date                         DATE,
+    status                              VARCHAR(20) NOT NULL
+);
+
+-- ecl_entries (2,676 rows)
+CREATE TABLE ecl_entries (
+    ecl_id                              NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    reason                              VARCHAR(30) NOT NULL,
+    issuing_authority                   VARCHAR(100) NOT NULL,
+    issued_date                         DATE NOT NULL,
+    expiry_date                         DATE,
+    status                              VARCHAR(10) NOT NULL,
+    case_reference                      VARCHAR(50)
+);
+
+-- family_relationships (48,713 rows)
+CREATE TABLE family_relationships (
+    relationship_id                     NUMBER NOT NULL,
+    traveler_id_1                       NUMBER NOT NULL,
+    traveler_id_2                       NUMBER NOT NULL,
+    relationship_type                   VARCHAR(15) NOT NULL,
+    verified                            NUMBER
+);
+
+-- illegal_crossings (25,000 rows)
+CREATE TABLE illegal_crossings (
+    crossing_id                         NUMBER NOT NULL,
+    detected_date                       TIMESTAMP NOT NULL,
+    location_name                       VARCHAR(150),
+    nearest_port_id                     NUMBER,
+    latitude                            NUMBER,
+    longitude                           NUMBER,
+    direction                           VARCHAR(10),
+    detection_method                    VARCHAR(20) NOT NULL,
+    group_size                          NUMBER,
+    smuggler_linked                     NUMBER,
+    apprehended_count                   NUMBER,
+    outcome                             VARCHAR(20) NOT NULL,
+    lead_traveler_id                    NUMBER,
+    nationality_id                      NUMBER
+);
+
+-- offloading_records (9,674 rows)
+CREATE TABLE offloading_records (
+    offload_id                          NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    offload_date                        DATE NOT NULL,
+    port_id                             NUMBER NOT NULL,
+    reason                              VARCHAR(30) NOT NULL,
+    airline                             VARCHAR(100),
+    flight_number                       VARCHAR(15),
+    destination_country_id              NUMBER,
+    linked_alert_id                     NUMBER,
+    linked_ecl_id                       NUMBER
+);
+
+-- ports_of_entry (39 rows)
+CREATE TABLE ports_of_entry (
+    port_id                             NUMBER NOT NULL,
+    port_name                           VARCHAR(150) NOT NULL,
+    port_type                           VARCHAR(20) NOT NULL,
+    city                                VARCHAR(100),
+    country_id                          NUMBER NOT NULL,
+    iata_code                           VARCHAR(10),
+    latitude                            NUMBER,
+    longitude                           NUMBER,
+    is_active                           NUMBER
+);
+
+-- removal_orders (15,000 rows)
+CREATE TABLE removal_orders (
+    order_id                            NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    order_date                          DATE NOT NULL,
+    reason                              VARCHAR(30) NOT NULL,
+    destination_country_id              NUMBER NOT NULL,
+    execution_date                      DATE,
+    status                              VARCHAR(15) NOT NULL,
+    voluntary_departure                 NUMBER
+);
+
+-- risk_profiles (150,000 rows)
+CREATE TABLE risk_profiles (
+    profile_id                          NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    risk_score                          NUMBER NOT NULL,
+    risk_tier                           VARCHAR(10) NOT NULL,
+    overstay_history                    NUMBER,
+    watchlist_hits                      NUMBER,
+    conflict_zone_travel                NUMBER,
+    document_fraud_flag                 NUMBER,
+    trafficking_association             NUMBER,
+    criminal_record                     NUMBER,
+    network_membership                  NUMBER,
+    last_updated                        TIMESTAMP
+);
+
+-- sponsors (90 rows)
+CREATE TABLE sponsors (
+    sponsor_id                          NUMBER NOT NULL,
+    sponsor_type                        VARCHAR(20) NOT NULL,
+    sponsor_name                        VARCHAR(200) NOT NULL,
+    country_id                          NUMBER NOT NULL,
+    city                                VARCHAR(100),
+    industry                            VARCHAR(100),
+    registration_number                 VARCHAR(50),
+    is_verified                         NUMBER
+);
+
+-- suspect_networks (5,000 rows)
+CREATE TABLE suspect_networks (
+    link_id                             NUMBER NOT NULL,
+    network_id                          VARCHAR(20) NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    role                                VARCHAR(20) NOT NULL,
+    confidence_level                    VARCHAR(10),
+    identified_date                     DATE NOT NULL,
+    is_active                           NUMBER
+);
+
+-- trafficking_cases (5,000 rows)
+CREATE TABLE trafficking_cases (
+    case_id                             NUMBER NOT NULL,
+    case_type                           VARCHAR(20) NOT NULL,
+    victim_traveler_id                  NUMBER,
+    suspect_traveler_id                 NUMBER,
+    origin_country_id                   NUMBER NOT NULL,
+    transit_country_id                  NUMBER,
+    destination_country_id              NUMBER NOT NULL,
+    reported_date                       DATE NOT NULL,
+    status                              VARCHAR(25) NOT NULL,
+    victim_age_at_time                  NUMBER,
+    victim_gender                       CHAR(1)
+);
+
+-- travel_records (500,000 rows)
+CREATE TABLE travel_records (
+    record_id                           NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    application_id                      NUMBER,
+    entry_port_id                       NUMBER,
+    exit_port_id                        NUMBER,
+    entry_date                          TIMESTAMP,
+    exit_date                           TIMESTAMP,
+    travel_direction                    VARCHAR(10) NOT NULL,
+    travel_purpose                      VARCHAR(30),
+    flight_number                       VARCHAR(15),
+    carrier                             VARCHAR(100),
+    declared_stay_days                  NUMBER,
+    actual_stay_days                    NUMBER,
+    overstay_flag                       NUMBER,
+    flagged_suspicious                  NUMBER,
+    referral_to_investigation           NUMBER
+);
+
+-- travelers (150,000 rows)
+CREATE TABLE travelers (
+    traveler_id                         NUMBER NOT NULL,
+    passport_number                     VARCHAR(20) NOT NULL,
+    first_name                          VARCHAR(100) NOT NULL,
+    last_name                           VARCHAR(100) NOT NULL,
+    date_of_birth                       DATE NOT NULL,
+    gender                              CHAR(1),
+    nationality_id                      NUMBER NOT NULL,
+    birth_country_id                    NUMBER NOT NULL,
+    occupation                          VARCHAR(100),
+    education_level                     VARCHAR(20),
+    marital_status                      VARCHAR(10),
+    phone_number                        VARCHAR(20),
+    email                               VARCHAR(150),
+    created_at                          TIMESTAMP
+);
+
+-- visa_applications (250,000 rows)
+CREATE TABLE visa_applications (
+    application_id                      NUMBER NOT NULL,
+    traveler_id                         NUMBER NOT NULL,
+    visa_code                           VARCHAR(5) NOT NULL,
+    sponsor_id                          NUMBER,
+    application_date                    DATE NOT NULL,
+    decision_date                       DATE,
+    status                              VARCHAR(15) NOT NULL,
+    denial_reason                       VARCHAR(255),
+    processing_office                   VARCHAR(100),
+    fee_amount                          NUMBER,
+    fee_currency                        VARCHAR(3)
+);
+
+-- visa_categories (20 rows)
+CREATE TABLE visa_categories (
+    visa_code                           VARCHAR(5) NOT NULL,
+    visa_name                           VARCHAR(100) NOT NULL,
+    visa_class                          VARCHAR(20) NOT NULL,
+    max_duration_days                   NUMBER,
+    allows_work                         NUMBER,
+    allows_study                        NUMBER,
+    requires_sponsor                    NUMBER,
+    description                         VARCHAR(255)
+);
+
+-- watchlist (8,000 rows)
+CREATE TABLE watchlist (
+    alert_id                            NUMBER NOT NULL,
+    traveler_id                         NUMBER,
+    passport_number                     VARCHAR(20),
+    alert_type                          VARCHAR(25) NOT NULL,
+    severity                            VARCHAR(10),
+    issued_by                           VARCHAR(100),
+    issued_date                         DATE NOT NULL,
+    expiry_date                         DATE,
+    is_active                           NUMBER,
+    notes                               VARCHAR(500)
+);

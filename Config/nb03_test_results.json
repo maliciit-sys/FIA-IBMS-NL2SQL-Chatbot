@@ -1,0 +1,72 @@
+[
+  {
+    "question": "List all off-loaded passengers at Islamabad Airport in 2025",
+    "sql": "SELECT t.first_name, t.last_name, ol.reason\nFROM travelers t\nJOIN offloading_records ol ON t.traveler_id = ol.traveler_id\nJOIN ports_of_entry poe ON ol.port_id = poe.port_id\nWHERE EXTRACT(YEAR FROM ol.offload_date) = 2025 AND poe.port_name = 'Islamabad International Airport'",
+    "is_valid": true,
+    "exec_success": true,
+    "row_count": 2384,
+    "narration": "Assistant\n\nA total of 2,384 passengers were off-loaded at Islamabad Airport in 2025. The primary reasons for off-loading included Watchlist Hits (1,124 cases), ECL Matches (612 cases), Incomplete Travel Documents (115 cases), Court Orders (45 cases), and other reasons such as Invalid Documents, Suspicious Behavior, and Airline Refusal. The data shows that Watchlist Hits were the most common reason for off-loading. (Note: This result is capped at the first 50 rows displayed; additional records may exist beyond this limit.)",
+    "timings": {
+      "sql_generation": 12.250732421875,
+      "narration": 10.14689016342163,
+      "total": 22.444404125213623
+    },
+    "overall_status": "SUCCESS"
+  },
+  {
+    "question": "Which airlines have the highest off-loading rate?",
+    "sql": "SELECT airline, COUNT(*) AS offload_count\nFROM offloading_records\nWHERE EXTRACT(YEAR FROM offload_date) = 2025 AND EXTRACT(MONTH FROM offload_date) = 12\nGROUP BY airline\nORDER BY offload_count DESC\nFETCH FIRST 3 ROWS ONLY",
+    "is_valid": true,
+    "exec_success": true,
+    "row_count": 3,
+    "narration": "Assistant:The airlines with the highest off-loading rates are Saudi Airlines and Serene Air, both with 59 offloads each, followed by flydubai with 55 offloads.",
+    "timings": {
+      "sql_generation": 12.403052568435669,
+      "narration": 5.430250406265259,
+      "total": 17.85051965713501
+    },
+    "overall_status": "SUCCESS"
+  },
+  {
+    "question": "How many watchlist alerts are currently active?",
+    "sql": "SELECT COUNT(*) FROM watchlist WHERE is_active = 1",
+    "is_valid": true,
+    "exec_success": true,
+    "row_count": 1,
+    "narration": "Assistant:There are currently 6,378 active watchlist alerts in the system. This figure represents all alerts that are currently flagged and require attention from the relevant authorities. No further details or breakdowns were requested, so no additional information is provided at this time.",
+    "timings": {
+      "sql_generation": 8.138912439346313,
+      "narration": 5.314372777938843,
+      "total": 13.45965027809143
+    },
+    "overall_status": "SUCCESS"
+  },
+  {
+    "question": "Top 10 most frequent travelers this year",
+    "sql": "SELECT t.first_name, t.last_name, COUNT(tr.record_id) AS travel_count\nFROM travelers t\nJOIN travel_records tr ON t.traveler_id = tr.traveler_id\nWHERE EXTRACT(YEAR FROM tr.entry_date) = 2025\nGROUP BY t.traveler_id, t.first_name, t.last_name\nORDER BY travel_count DESC\nFETCH FIRST 10 ROWS ONLY",
+    "is_valid": true,
+    "exec_success": true,
+    "row_count": 10,
+    "narration": "Assistant:The top 10 most frequent travelers this year all have a travel count of 12. The names of these travelers are as follows:\n\n1. Aamir Bugti  \n2. Asif Ansari  \n3. Noreen Ahmed  \n4. Nasser Al-Zaahrani  \n5. Saeed Al-Zahrani  \n6. Muhammad Yousafzai  \n7. Parveen Bhutto  \n8. Zubair Ahmed  \n9. Arif Khattak  \n10. Muhammad Yousafzai  \n\nNote that Muhammad Yousafzai appears twice in the list, indicating a possible duplicate entry or multiple entries under the same name.",
+    "timings": {
+      "sql_generation": 12.0503830909729,
+      "narration": 8.362691640853882,
+      "total": 21.08032774925232
+    },
+    "overall_status": "SUCCESS"
+  },
+  {
+    "question": "Compare off-loading rates across all airports",
+    "sql": "SELECT poe.port_name, COUNT(ol.offload_id) AS offloaded_travelers_count\nFROM ports_of_entry poe\nJOIN offloading_records ol ON poe.port_id = ol.port_id\nWHERE EXTRACT(YEAR FROM ol.offload_date) = 2025\nGROUP BY poe.port_name\nORDER BY offloaded_travelers_count DESC",
+    "is_valid": true,
+    "exec_success": true,
+    "row_count": 7,
+    "narration": "Assistant:Jinnah International Airport had the highest off-loading rate with 2,754 travelers, followed by Islamabad International Airport with 2,384 travelers and Allama Iqbal International Airport with 2,130 travelers. Bacha Khan International Airport recorded 755 travelers, Multan International Airport 590 travelers, Sialkot International Airport 552 travelers, and Quetta International Airport 509 travelers. These figures reflect the total number of offloaded travelers at each airport during the reporting period.",
+    "timings": {
+      "sql_generation": 11.230660200119019,
+      "narration": 7.4695892333984375,
+      "total": 18.711442947387695
+    },
+    "overall_status": "SUCCESS"
+  }
+]
